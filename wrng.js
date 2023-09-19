@@ -24,7 +24,6 @@ const dispList = document.getElementById("dispReportOther");
 const closeDisp = document.getElementById("closeDisp");
 const otherDispHead = document.getElementById("otherDispHead");
 
-
 document.getElementById("date").valueAsDate = new Date();
 
 // const Data = [
