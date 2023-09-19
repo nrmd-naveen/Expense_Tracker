@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expense ~NRMD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left" id="left">
+            <div class="top-half">
+                <h2 class = "lhead">Expense Tracker</h2>
+                <div class="exp-box">
+                    <h3>Total expense</h3>
+                    <h1 class="rs">₹ <span id = "total-expense">000.00</span></h1>
+                </div>
+            </div>
+            <div class="left-bottom" id="left-bottom">
+                <p class = "add-head">Add New Expense</p>
+                <form action="#" id="form">
+                    <div class="form-control">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date" ><br>
+                        <label for="food">Food </label>
+                        <input type="number" name="food" id="food" placeholder=" BF & Lun"><br>
+                        <label for="bus">Bus </label>
+                        <input type="number" name="bus" id="bus" placeholder=" Morn&Eve"><br>
+                        <label for="grocery">Grocery </label>
+                        <input type="number" name="groc" id="groc" placeholder=" Din&Groc"><br>
+                        
+                    </div>
+                    <button class="add-btn" id = "add-btn">+ Add Others</button>
+                    <div class="add-exp" id = "add-exp">
+                        <div class="form-control">
+                            <label for="add-desc">Description </label>
+                            <input type="text" name="desc" id="add-desc" size="30" placeholder=" Enter Description">
+                        </div>
+                        <div class="form-control">
+                            <label for="add-amount">Amount </label>
+                            <input type="number" name="rate" id="add-amount" placeholder=" Rate">
+                        </div>
+                        <button class="x-btn" id="x-btn">x</button>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" id="submit" class="submit">Add Expense</button>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-last" id="bottomLast">
+                    <h4 class="report-data" id="reportData">EXPENSE DATA</h1>
+                    <div class="disp-list-cont" id="dispListCont">
+                        <ul class="disp-report" id="dispReport">
+                            <li class="rec date"><span class="rec1">Date</span> <span id="recval1">00/00/0000</span></li>
+                            <li class="rec"><span class="rec1">Food</span> <span id="recval2">00</span></li>
+                            <li class="rec"><span class="rec1">Bus</span> <span id="recval3">00</span></li>
+                            <li class="rec"><span class="rec1">grocery</span> <span id="recval4">00</span></li>
+                        </ul>
+                        <h4 class="other-head" id="otherDispHead">OTHERS</h4>
+                        <li class="disp-report-other" id="dispReportOther">
+                            <!-- <ul class="rec date"><span>Date</span> <span>00/00/0000</span></ul> -->
+                        </li>
+                    </div>
+                    <button class="disp-x-btn" id="closeDisp">x</button>
+            </div>
+        </div>
+        <div class="right" id="right">
+            <h2>Expenditure Report</h2>
+            <li class="report-container" id="report-container">
+                <ul class="reports" id = "reports"><span class="rep-date">09-07-2023</span> <span class="epx-rate">99.00</span><button class="x-btn" id="del-btn">x</button></ul>
+                <ul class="reports"><span class="rep-date">10-07-2023</span> <span class="epx-rate">99.00</span></ul>
+                <ul class="reports"><span class="rep-date">11-07-2023</span> <span class="epx-rate">99.00</span></ul>
+            </li>
+        </div>
+    </div>
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#home" id = "homePage" class="nav__link active-link"  onclick="dispLeft()">
+                    <i class='bx bx-home-alt nav__icon act'></i>
+                    <span class="nav__name">Home</span>
+                </a>
+            </li>
+            
+            <li class="nav__item">
+                <a href="#contactme" id="reportPage" class="nav__link" onclick="dispRight()">
+                    <i class='bx bx-message-square-detail nav__icon'></i>
+                    <span class="nav__name">Reports</span>
+                </a>
+            </li>
+            
+            <li class="nav__item">
+                <a href="#about" class="nav__link" onclick="abt()">
+                    <i class='bx bx-user nav__icon'></i>
+                    <span class="nav__name">About</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <script src = "JS/wrng.js"></script>
+</body>
+</html>
